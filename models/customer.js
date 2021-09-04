@@ -7,11 +7,12 @@ const Reservation = require("./reservation");
 
 class Customer {
   constructor({ id, firstName, lastName, phone, notes }) {
-    this.id = id;
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.phone = phone;
-    this.notes = notes;
+    this.id = id
+    this.firstName = firstName
+    this.lastName = lastName
+    this.fullName = `${this.firstName} ${this.lastName}`
+    this.phone = phone
+    this.notes = notes
   }
 
   /** find all customers. */
